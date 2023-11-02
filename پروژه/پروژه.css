@@ -1,0 +1,71 @@
+html{font-family:"vazir";}
+body{
+    font-size: 1.3rem;
+}
+.img1{
+    margin-left: 50px;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    height: 8rem;
+    
+}
+
+.header-top{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+width: 100%;
+
+}
+.header-left .login{
+    color: #fff ;
+    border-radius: 30px;
+    background-color: rgb(43, 179, 179);
+    margin-left: 15px;
+}
+.login:hover{
+    filter:drop-shadow( 4px  4px  3px  rgb(140, 140, 140));
+    background-color: rgb(27, 212, 212);
+    color: #fff !important;
+}
+.header-right{
+display: flex;
+
+}
+.header-left{
+
+display: flex;
+
+}
+.header-left p{
+padding: 10px 20px;
+color: cadetblue;
+}
+.header-left p:hover{
+    color: rgb(15, 93, 165);
+}
+    
+    
+.menu-list{
+    display: flex;
+}
+.menu-item{
+padding: 0px 15px 0px 15px;
+color: #988989;
+}
+.menu-item:hover{
+    color: rgb(15, 93, 165);
+    text-shadow:1px 1px 4px rgb(129, 129, 129) ;
+}
+.header-bot{
+}
