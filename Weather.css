@@ -1,0 +1,192 @@
+html{
+    font-family: "Barlow", "vazir";}
+    *{
+        margin: 0;
+        padding:0 ;
+        box-sizing: border-box;
+    }
+    ::selection{
+        background-color: #6077fe;
+    }
+    body{
+      transition-duration: .2s;
+      background-repeat: no-repeat !important;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    /* |||||||||||||Header&nav|||||||||||||||| */
+    header{
+        width: 100%;  height:8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .location{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        font-size: 1.3rem;
+        color: white;
+    }
+    .location img{
+        padding: .8rem;
+        height: 45%;
+    }
+    .today-date{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        font-size: 1.35rem;
+        color: white;
+    }
+    /* |||||||||||||||||Main||||||||||||||||||||| */
+    .dady-hava{
+        width: 100%;height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse; 
+        gap: 9rem;
+    }
+    /* |||||||||||||||||futureDay|||||||||||||||||| */
+     .list-forecast{
+        width: 50%;
+        height: 50%;
+        border-radius: .6rem;
+        padding: 1rem;
+        z-index: 1;
+     }
+     .list-forecast ul{
+        width: 100%; height: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+     }
+     .list-forecast ul:not(:first-child){
+        gap: 1.4rem;
+     }
+     .forecast{
+        width: 100%; height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        color: white;
+        font-size: 1.3rem;
+        padding-right: 1rem;
+     }
+     .forecast img{
+        margin-left: .7rem;
+        height: 70%;
+     }
+     .list-forecast ul li{
+        height:4rem;
+
+     }
+     .list-forecast ul li:not(:last-child){
+        border-bottom: 2px solid rgb(255, 255, 255, .1);
+     }
+     /* |||||||||||||||||LI futureDay|||||||||||||||||||||| */
+     .dady-LIlist{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+     }
+     .LIlist-min-max{
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 2rem;
+      gap: .5rem;
+     }
+     .LIlist-min-max span{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 1.05rem;
+     }
+
+     .LIlist-icon-day{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 1rem;
+     }
+     .LIlist-icon-day span{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 1.2rem;
+     }
+     .LIlist-icon-day img{
+      height: 100%;
+      transform: scale(1.5);
+      padding-bottom: .5rem;
+     }
+    /* ||||||||||||||||||cart vazehava||||||||||||||||||||| */
+     .hava{
+        width: 20%;
+        max-height: 50%;
+        border-radius: 2rem;
+        color: white;
+        padding: 2.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+     }
+     .hava img{
+      width: 100%;
+     }
+     .hava .today-deg{
+        font-size:2.8rem ;
+        padding: 1rem 0 0 0;
+     }
+     .today-vaz{
+        width:100%; 
+        font-size:2rem;
+        text-align: center;
+        line-height: 2rem;
+     }
+     .dady-spans{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: row !important;
+        margin-top: 1.3rem;
+        width: 100%;
+        height: 4.5rem;
+     }
+     .dady-spans span{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: row !important;
+        font-size: 1.3rem;
+     }
+     /* ||||||||||||end|||||||||||| */
+   footer{
+      position: relative;
+      height: 233px;
+   }
+     .end{
+      width:100%;
+      height: 20rem;
+      position: absolute;
+      left: 15rem;
+      transform: scale(1.65);
+     }
