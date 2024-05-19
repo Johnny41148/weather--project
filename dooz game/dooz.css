@@ -1,0 +1,235 @@
+html{
+    font-family: "Barlow", "vazir";}
+    *{
+        margin: 0;
+        padding:0 ;
+        box-sizing: border-box;
+    }
+    ::selection{
+        background-color: #6077fe;
+    }
+ body{
+    background-color: #182830;
+    position: relative;
+ }
+ main{
+    width: 100%; height: 57.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .all-father{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+ }
+ .top-game{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+ }
+ .xtop{
+    color: #31c4be;
+    font-size: 3.7rem;
+    padding-right: .1rem;
+ }
+ .otop{
+    color: #f2b237;
+    font-size: 3rem;
+ }
+ .exit{
+    width: 8rem;height: 2.7rem;
+    background-color:#1f3540;
+    border:unset;
+    border-radius: .7rem;
+    color: #aabec9;
+    box-shadow: 0px 4px 0 #12232d;
+    font-size: 1.1rem;
+    cursor: pointer;
+ }
+ .exit i{
+    padding-right: .5rem;
+    font-size: 1.5rem !important;
+ }
+ .refresh{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: unset;
+    background-color:#aabec9 ;
+    border-radius: .7rem;
+    box-shadow: 0px 3px 0 #728a96;
+    font-size: 1.2rem;
+    padding-top: .2rem;
+    cursor: pointer;
+ }
+ .game{
+    height: 100%;
+    width: 100%;
+ }
+ .home-icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+ }
+ .home-icons li{
+  width: 26%; height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#1f3540 ;
+  box-shadow: 0px 5px 0 #12232d;
+  border-radius: .7rem;
+  margin: 10px;
+ cursor: pointer;
+ transition-duration: .3s;
+ position: relative;
+ }
+ .home-icons li .x{
+   position:absolute;
+   font-size: 7rem;
+ }
+ .home-icons li .o{
+   position:absolute;
+   font-size: 7rem;
+ }
+ .home-icons li:hover{
+    box-shadow: 0px 6px 0 #12232d;
+    background-color:#253e4b ;
+ }
+ .vaz{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-left: .4rem;
+    margin-top: 1rem;
+ }
+.vaz div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    height: 5rem;
+    font-size: 1.3rem;
+    border-radius: .7rem;
+    transition-duration: 1s;
+}
+.home-X{
+    background-color:#31c4be;
+    transition-duration: 1s;
+}
+.home-O{
+    background-color:#f2b237 ;
+}
+.ties{
+    background-color:#aabec9 ;
+}
+
+.glowX{
+ transform: scale(1.1);
+ position: relative;
+}
+.glowX::after , .glowX::before{
+   content: "";
+   position: absolute;
+   background: linear-gradient(45deg,#5ab8b4,#31c4be,#1baea9);
+   background-size: 400%;
+   width: calc(100% + 5px);
+   height: calc(100% + 5px);
+   z-index: -1;
+   border-radius: .7rem;
+}
+.glowX::after{
+   filter: blur(10px);
+}
+.glowO{
+   transform: scale(1.1);
+   position: relative;
+}
+.glowO::after , .glowO::before{
+   content: "";
+   position: absolute;
+   background: linear-gradient(45deg,#f4bb51,#e2a32e,#d39625);
+   background-size: 400%;
+   width: calc(100% + 5px);
+   height: calc(100% + 5px);
+   z-index: -1;
+   border-radius: .7rem;
+}
+.glowO::after{
+   filter: blur(10px);
+}
+
+.home-winner{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   background-color: rgba(0, 0, 0, 0.445);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+.show-winner{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 38%;
+   background-color: #1f3540;
+}
+.winner{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+}
+.winner span{
+   color: white;
+   font-size: 1.2rem;
+   margin-top: 2rem;
+}
+.winner button{
+   width: 10rem;
+   height: 3rem;
+   font-weight: bold;
+   font-size: 1rem;
+   border: none;
+   border-radius: .7rem;
+   background-color: #f2b237;
+   color: #182830;
+   box-shadow: 0px 5px 0 #c5840b;
+   cursor: pointer;
+   margin-bottom: 2rem;
+}
+.winner div span{
+   font-size: 3rem;
+   word-spacing: .3rem;
+}
+.winner div{
+   width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 2rem;
+}
+.winmarkx{
+   color: #31c4be;
+   font-size: 10rem !important;
+   margin-right: 2rem;
+}
+.winmarko{
+   color: #f2b237;
+   font-size: 9rem !important;
+   margin-right: 2rem;
+}
